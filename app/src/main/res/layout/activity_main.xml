@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/breatheCntTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="7 Breathe"/>
+
+    <TextView
+        android:id="@+id/lastTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breatheCntTextView"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorAccent"
+        android:text="Last at 11:45PM"/>
+
+    <TextView
+        android:id="@+id/totalSessionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastTimeTextView"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorAccent"
+        android:text="4min Today"/>
+
+    <TextView
+        android:id="@+id/durationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/lastTimeTextView"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/breatheCntTextView"
+        android:textSize="30dp"
+        android:text="1 min"/>
+
+    <ImageView
+        android:id="@+id/lotusImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/breatheimg" />
+
+    <TextView
+        android:id="@+id/guideTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lotusImageView"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="START"
+        android:textColor="@android:color/white"/>
+    
+</RelativeLayout>
